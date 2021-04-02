@@ -1,0 +1,25 @@
+{
+  "schemaVersion": 1,
+  "id": "shirei",
+  "version": "${version}",
+
+  "name": "Shirei",
+  "description": "Adds creative-only stuff that works without administrator privileges",
+  "authors": [
+    "redstonekasi"
+  ],
+  "icon": "assets/shirei/icon.png",
+
+  "environment": "client",
+  "entrypoints": {
+    "client": [
+      "shirei.Shirei"
+    ]
+  },
+
+  "depends": {
+    "fabricloader": ">=0.7.4",
+    "fabric": "*",
+    "minecraft": "1.16.x"
+  }
+}
