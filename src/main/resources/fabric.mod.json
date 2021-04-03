@@ -8,6 +8,12 @@
   "authors": [
     "redstonekasi"
   ],
+
+  "contact": {
+    "sources": "https://github.com/redstonekasi/shirei"
+  },
+  "license": "LGPL-3.0-only",
+
   "icon": "assets/shirei/icon.png",
 
   "environment": "client",
