@@ -4,7 +4,7 @@
   "version": "${version}",
 
   "name": "Shirei",
-  "description": "Adds creative-only stuff that works without administrator privileges",
+  "description": "Adds creative-only commands that work without administrator privileges.",
   "authors": [
     "redstonekasi"
   ],
