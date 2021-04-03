@@ -11,6 +11,7 @@ import net.minecraft.command.argument.ItemStackArgument;
 import net.minecraft.command.argument.ItemStackArgumentType;
 import net.minecraft.item.ItemStack;
 import net.minecraft.text.TranslatableText;
+import shirei.util.ItemUtil;
 
 import static net.fabricmc.fabric.api.client.command.v1.ClientCommandManager.argument;
 
@@ -33,18 +34,7 @@ public class GiveCommand {
         if(!mc.player.isCreative()) throw NOT_IN_CREATIVE.create();
 
         ItemStack stack = item.createStack(count, true);
-
-        if(mc.player.getMainHandStack().isEmpty())
-            mc.interactionManager.clickCreativeStack(stack, 36 + mc.player.inventory.selectedSlot);
-        else {
-            int nextEmptySlot = mc.player.inventory.getEmptySlot();
-
-            if(nextEmptySlot < 9) {
-                mc.interactionManager.clickCreativeStack(stack, 36 + nextEmptySlot);
-            }
-            else
-                mc.interactionManager.clickCreativeStack(stack, 36 + mc.player.inventory.selectedSlot);
-        }
+        ItemUtil.giveItem(stack);
 
         source.sendFeedback(new TranslatableText("command.shirei.give.success", count, stack.toHoverableText()));
         return 1;
