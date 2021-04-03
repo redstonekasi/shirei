@@ -1,5 +1,9 @@
 {
   "command.shirei.not_in_creative": "You have to be in creative to use this command.",
+  "command.shirei.empty_stack": "You have to hold an item to use this command.",
 
-  "command.shirei.give.success": "Added %d %s to your inventory."
+  "command.shirei.give.success": "Added %d %s to your inventory.",
+
+  "command.shirei.enchant.success": "Added enchantment %s to %s.",
+  "command.shirei.enchant.clear": "Cleared all enchantments from %s."
 }
