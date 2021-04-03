@@ -5,5 +5,9 @@
   "command.shirei.give.success": "Added %d %s to your inventory.",
 
   "command.shirei.enchant.success": "Added enchantment %s to %s.",
-  "command.shirei.enchant.clear": "Cleared all enchantments from %s."
+  "command.shirei.enchant.clear": "Cleared all enchantments from %s.",
+
+  "command.shirei.data.get.success": "%s has the following item data: %s",
+  "command.shirei.data.get.no_data": "%s has no item data.",
+  "command.shirei.data.set.success": "Modified item data of %s."
 }
